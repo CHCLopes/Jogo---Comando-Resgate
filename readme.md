@@ -20,4 +20,4 @@ Baseado no Projeto
 Implementadas novas funcionalidades, animações, imagens e sons.
 
 site hospedado:
-[Comando Resgate] (https://comandoresgate.netlify.app/)
+[Comando Resgate](https://comandoresgate.netlify.app/)
