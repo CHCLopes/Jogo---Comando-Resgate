@@ -1,0 +1,371 @@
+html {
+  width: auto;
+  height: auto;
+}
+
+.vertical{
+  display: flex;
+  flex-direction: column;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+h1 {
+	font-family:Saira Stencil One;
+	font-size:80px;
+  font-style: italic;
+	color:rgb(6, 92, 13);
+  text-shadow: yellow 1px -1px, yellow -1px 1px, yellow 1px 1px, yellow -1px -1px;
+  margin: 5px;
+  padding: 5px;
+  margin-right: 15px;
+
+}
+
+body {
+  font-family: 'Saira Stencil One', cursive;
+	background-image: url(https://cdn.pixabay.com/photo/2013/07/13/12/05/army-159125_1280.png);
+  color: rgb(6, 92, 13);
+  text-shadow: yellow 1px -1px, yellow -1px 1px, yellow 1px 1px, yellow -1px -1px;
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: yellow;
+  text-shadow: none;
+  text-align: center;
+  text-justify: auto;
+  background-color: rgba(3, 68, 8, 0.685);
+  border: yellow solid;
+  border-radius:20px;
+  padding: 5px;
+}
+
+button {
+  width: 15rem;
+  height: 3rem;
+  font-family: Saira Stencil One;
+  font-size: 32px;
+  border-radius: 20px;
+  border-color: yellow;
+  color: rgb(6, 92, 13);
+  text-shadow: yellow 1px -1px, yellow -1px 1px, yellow 1px 1px, yellow -1px -1px;
+  background-image: linear-gradient(45deg,rgb(6, 92, 13), yellow, rgb(6, 92, 13), yellow );
+}
+
+button:hover {
+  border-color: rgb(6, 92, 13);
+  color: yellow;
+  text-shadow: rgb(6, 92, 13) 1px -1px, rgb(6, 92, 13) -1px 1px, rgb(6, 92, 13) 1px 1px, rgb(6, 92, 13) -1px -1px;
+  background-image: linear-gradient(45deg,yellow, rgb(6, 92, 13), yellow, rgb(6, 92, 13) );
+}
+
+nav {
+  flex-direction: column;
+  width: 8rem;
+  height: 34rem;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 0;
+  background-color: darkgreen;
+  border-radius: 20px;
+  border: yellow 3px solid;
+}
+
+.button2{
+  width: fit-content;
+  height: 3rem;
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+  
+}
+
+.btnbox {
+  border-radius: 20px;
+  border: yellow 3px solid;
+  justify-content: space-evenly;
+  margin:10px;
+  padding: 5px;
+}
+
+h4{
+font-size: 18px;
+margin: 0;
+}
+
+#container {
+	width:80rem;
+	height:auto;
+	position:absolute;
+  margin-left: 40px;
+  padding: 0;  
+  align-self: center;
+}
+
+#fundoGame {
+	width:70rem;
+	height: 35rem;
+	background-image:url(https://thumbs.dreamstime.com/b/aplica%C3%A7%C3%A3o-do-fundo-do-jogo-d-projeto-do-vetor-73750606.jpg);
+	border-color:#FFF solid 20px;
+  border-radius: 20px;
+	background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#jogador {
+  width:250px;
+	height:60px;
+	position:absolute;
+	left:5px;
+	top:80px;
+  background-image:url(imgs/apache.png);
+  background-size:cover;
+  margin: 0;
+  padding: 5px;
+}
+
+#inimigo1 {
+	width:265px;
+	height:60px;
+	position:absolute;
+  left: 800px;
+  top: 80px;
+	background-image:url(imgs/inimigo1.png);
+	background-size:cover;
+  margin: 0;
+  padding: 5px;
+}
+
+#inimigo2 {
+	width: 15rem;
+  height:8rem;
+  position: absolute;
+  left: 880px;
+  top: 360px;
+	background-image:url(imgs/inimigo2.png);
+	background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#amigo {
+	width: 47px;
+	height: 60px;
+	position: absolute;
+	left: 5px;
+  top: 411px;
+	background-image:url(imgs/amigo.png);
+  
+}
+
+#inicio {
+	width:auto;
+	height:auto;
+	flex-direction: column;
+}
+
+.anima1{
+  background-image:url(imgs/apache.png);
+  animation: play .5s steps(2) infinite;
+
+  -webkit-animation: play .5s steps(2) infinite;
+  -moz-animation: play .5s steps(2) infinite;
+  -ms-animation: play .5s steps(2) infinite;
+  -o-animation: play .5s steps(2) infinite;
+}
+
+@keyframes play {
+  from {background-position: 0px;}
+  to {background-position: 530px;} 
+}
+
+@-webkit-keyframes play {
+  from { background-position:0px; }
+    to { background-position: -530px; }
+}
+
+@-moz-keyframes play {
+  from { background-position:0px; }
+    to { background-position: -530px; }
+}
+
+@-ms-keyframes play {
+  from { background-position:0px; }
+    to { background-position: -530px; }
+}
+
+@-o-keyframes play {
+  from { background-position:0px; }
+    to { background-position: -530px; }
+}
+
+.anima3 {
+background-image:url(imgs/amigo.png);
+animation:play2 .9s steps(12) infinite;
+-webkit-animation: play2 .9s steps(12) infinite;
+-moz-animation: play2 .9s steps(12) infinite;
+-ms-animation: play2 .9s steps(12) infinite;
+-o-animation: play2 .9s steps(12) infinite;
+}
+
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position: 527px;}
+}
+
+@-webkit-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-moz-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-ms-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-o-keyframes play2 {
+  from { background-position:    0px; }
+  to { background-position: -528px; }
+}
+
+.retorno{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(imgs/disparo.png);
+}
+
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+}
+
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+.anima4 {
+	width:44px;
+	height:51px;
+	background-image:url(imgs/amigo_morte.png);
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+       -moz-animation: play3 .5s steps(7) infinite;
+        -ms-animation: play3 .5s steps(7) infinite;
+         -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+#placar {
+	width: 1000px;
+	height: 50px;
+	position: absolute;
+	left: 90px;
+	top: 490px;
+  display: flex;
+  align-self: center;
+  padding: 10px;
+}
+
+h2 {
+	font-family:Saira Stencil One;
+	font-size:25px;
+	color:rgb(6, 92, 13);
+  text-shadow: yellow 1px -1px, yellow -1px 1px, yellow 1px 1px, yellow -1px -1px;
+}
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 1000px;
+	top: 510px;	
+}
+
+
+
+#fim {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: yellow;
+  background-color: rgba(3, 68, 8, 0.685);
+  border: yellow solid;
+  border-radius:20px;
+  padding: 5px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: max-content;
+  padding: 5px;
+}
+
+#reinicia {
+  font-size: 22px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#dedicado {
+  display: flex;
+  align-self:flex-end;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Resgate</title>
+  <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/aha-soft/transport-for-vista/256/helicopter-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+</head>
+<body onload="loop()">
+
+  <div id="container" class="center" > <!-- div container !-->
+
+    <div id="fundoGame" class="center"> <!-- div fundoGame !-->
+      <div id="inicio" class="center">
+        <h1 class="center">Comando Resgate</h1> <!-- div inicio !-->
+        <p>Como Jogar: <br>   Para Cima - "W"<br>Para Baixo - "S" <br>Atirar - "D"</p>
+        <button id="startBtn" class="center" onclick="start()"> Jogar </button>
+      </div> <!-- Fim da div inicio !-->
+    </div> <!-- Fim da div fundoGame !-->
+    
+    <nav class="center">
+      <h4>CONTROLES</h4>
+      <div class="vertical center btnbox">
+        <h4>Som</h4>
+        <button id="som" class="button2 center" onclick="ligaSom()"></button>
+      </div>
+      <div class="center vertical btnbox ">
+        <h4>Dificuldade</h4>
+        <button id="aumentar" class="button2 center" onclick="dificuldadeAumenta()">+</button>
+        <h4 id="displayDificuldade"></h4>
+        <button id="diminuir" class="button2 center" onclick="dificuldadeDiminui()">-</button>
+      </div>
+      <footer><p id="dedicado">Para Isinha!</p></footer>
+    </nav>
+
+</div> <!-- Fim da div container !-->
+  <!-- Sons do jogo !-->
+<audio src="assets/resources/sounds/abertura5.mp3" preload="auto" id="musicaInicio"></audio>
+<audio src="assets/resources/sounds/jogador.mp3" preload="auto" id="somJogador"></audio>
+<audio src="assets/resources/sounds/disparo2.mp3" preload="auto" id="somDisparo"></audio>
+<audio src="assets/resources/sounds/explosao2.mp3" preload="auto" id="somExplosao"></audio>
+<audio src="assets/resources/sounds/musica_fundo5.mp3" preload="auto" id="musicaDefundo"></audio>
+<audio src="assets/resources/sounds/gameover.mp3" preload="auto" id="somGameover"></audio>
+<audio src="assets/resources/sounds/perdido4.mp3" preload="auto" id="somPerdido"></audio>	
+<audio src="assets/resources/sounds/resgate2.mp3" preload="auto" id="somResgate"></audio>
+<audio src="assets/resources/sounds/good.mp3" preload="auto" id="somResgate2"></audio>
+<audio src="assets/resources/sounds/button.mp3" preload="auto" id="btnClick"></audio>
+
+  <script src="assets/scripts/jquery-1.11.1.min.js"></script>
+  <script src="assets/scripts/jquery-collision.min.js"></script>
+  <script src="assets/scripts/scripts.js"></script>
+</body>
+</html>
